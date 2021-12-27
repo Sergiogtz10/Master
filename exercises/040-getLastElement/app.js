@@ -1,4 +1,6 @@
 function getLastElement(array) {
   // your code here
-  return 4
+  return array[array.length - 1]
 }
+let output = getLastElement([1, 2, 3, 4]);
+console.log(output);

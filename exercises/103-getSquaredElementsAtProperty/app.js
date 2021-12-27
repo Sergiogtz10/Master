@@ -3,7 +3,13 @@ var obj = {
 };
 
 function getSquaredElementsAtProperty(obj, key) {
-    // your code here
+  let arrayscuared =[]
+  for(let element in obj[key]){
+    arrayscuared.push(Math.pow(obj[key][element],2));
+  }
+ 
+
+  return arrayscuared
 }
 
 var output = getSquaredElementsAtProperty(obj, 'key');

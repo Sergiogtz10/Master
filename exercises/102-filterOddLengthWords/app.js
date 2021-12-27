@@ -1,5 +1,7 @@
 function filterOddLengthWords(words) {
-    // your code here
+  
+  let arrayfiltrado = words.filter(element => element.length%2)
+  return arrayfiltrado
 }
 
 var output = filterOddLengthWords(['there', 'it', 'is', 'now']);

@@ -4,7 +4,15 @@ var obj = {
 };
 
 function getEvenElementsAtProperty(obj, key) {
-    // your code here
+  let array = [];
+  for (let element in obj[key] ){
+    if(obj[key][element]%2==0){
+      array.push(obj[key][element])
+    }
+  }
+  
+  return array
+
 }
 var output = getEvenElementsAtProperty(obj, 'key');
 console.log(output); // --> [1000, 50]
