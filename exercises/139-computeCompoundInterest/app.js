@@ -1,6 +1,10 @@
 function computeCompoundInterest(principal, interestRate, compoundingFrequency, timeInYears) {
   // your code here
+  let result =(1 + (interestRate/compoundingFrequency));
+  let totalResult = principal * Math.pow(result, (timeInYears * compoundingFrequency));
+  return totalResult - principal;
 }
+
 
 var output = computeCompoundInterest(1500, .043, 4, 6);
 console.log(output); // --> 438.83682213410543

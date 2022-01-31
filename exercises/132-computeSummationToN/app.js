@@ -1,5 +1,9 @@
 function computeSummationToN(n) {
-    // your code here
+  var suma =0
+  for (var i =1; i <=n; i++){
+    suma += i
+  }
+  return suma
 }
 
 var output = computeSummationToN(6);

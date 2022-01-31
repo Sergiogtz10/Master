@@ -1,17 +1,24 @@
+
 function findLongestPalindrome(sentence) {
   // split sentence into words
   // iterate words and collect the palindromes
   // sort the list of palindromes by word length
   // return the largest item in the sorted list
+ 
+
+
+
+
 }
 
 function reverseString(string) {
+
 }
 
 function isPalindrome(word) {
   // hint: you can detect palindromes by comparing a string to its reverse
+  word.split('').reverse().join('') === word;
 }
-
 function sortAscendingByLength(a, b) {
   if (a.length > b.length) {
     return 1;
@@ -20,3 +27,4 @@ function sortAscendingByLength(a, b) {
   }
   return 0;
 }
+console.log(findLongestPalindrome("My dad is a racecar athlete"));

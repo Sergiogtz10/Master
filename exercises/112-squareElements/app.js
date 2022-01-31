@@ -1,13 +1,12 @@
 function squareElements(arr) {
-  // your code here
-  let array =[]
-  for(let i=0; i < arr.length; i++){
-    array.push(Math.pow(arr[i], 2))
-
-    return array
+  var newarr = []
+  for(var i=0;i<arr.length; i++){
+      newarr.push(arr[i]*arr[i])
+  }
+  return newarr
   }
   
-}
+
 
 var output = squareElements([1, 2, 3]);
 console.log(output); // --> [1, 4, 9]
